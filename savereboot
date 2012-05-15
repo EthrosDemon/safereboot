@@ -1,0 +1,17 @@
+#!/bin/bash
+##
+# securereboot protects you
+# from shutting down the wrong
+# server while working remotely
+##
+
+MNAME=`hostname`
+REBOOT=`which reboot`
+echo -e "savereboot: you try to reboot machine \033[1m$MNAME\033[0m, continue by writing this hostname!" 
+read -p "$ " HOST
+if [ "$MNAME" == "$HOST" ]
+then
+    $REBOOT $@
+else
+    echo "wrong hostname, good i asked you for it..."
+fi
