@@ -9,4 +9,4 @@ Installation:
 - be some sort of safe of wrong reboots
 
 Remarks:
-- just saves reboot, not halt, shutdown or others
+- just "secures" reboot, not halt, shutdown or others
